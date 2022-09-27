@@ -14,6 +14,7 @@ struct LecturesView: View {
         ZStack {
             
             Color("darkblue")
+                .opacity(0.9)
                 .ignoresSafeArea()
             
             ScrollView {
@@ -58,13 +59,13 @@ struct LecturesView: View {
                                  
                                 
                          }.padding(.leading)
-                            .navigationBarTitle(Text("Lectures").font(.system(size: 50)) .foregroundColor(.white))
+                            .navigationBarTitle("Lectures")
                         
                         
                         
                         Divider()
                             .frame(width: 400, height: 2)
-                            .background(Color.white)
+                            .background(Color.gray)
                         
                     }
                                     
@@ -103,7 +104,7 @@ struct LecturesView: View {
                         
                         Divider()
                             .frame(width: 400, height: 2)
-                            .background(Color.white)
+                            .background(Color.gray)
                         
                     }
                     
@@ -143,7 +144,7 @@ struct LecturesView: View {
                         
                         Divider()
                             .frame(width: 400, height: 2)
-                            .background(Color.white)
+                            .background(Color.gray)
                         
                     }
                         
@@ -184,7 +185,7 @@ struct LecturesView: View {
                         
                         Divider()
                             .frame(width: 400, height: 2)
-                            .background(Color.white)
+                            .background(Color.gray)
                         
                     }
                     
@@ -222,7 +223,7 @@ struct LecturesView: View {
                         }.padding()
                         Divider()
                             .frame(width: 400, height: 2)
-                            .background(Color.white)
+                            .background(Color.gray)
                         
                     }
                     
@@ -261,7 +262,7 @@ struct LecturesView: View {
                         }.padding()
                         Divider()
                             .frame(width: 400, height: 2)
-                            .background(Color.white)
+                            .background(Color.gray)
                         
                     }
                     
@@ -300,7 +301,7 @@ struct LecturesView: View {
                         }.padding()
                         Divider()
                             .frame(width: 400, height: 2)
-                            .background(Color.white)
+                            .background(Color.gray)
                         
                     }
                     
@@ -339,7 +340,7 @@ struct LecturesView: View {
                         }.padding()
                         Divider()
                             .frame(width: 400, height: 2)
-                            .background(Color.white)
+                            .background(Color.gray)
                         
                     }
                     
@@ -369,10 +370,7 @@ struct LecturesView: View {
 
 
                         }.foregroundColor(.white).padding()
-                        Divider()
-                            .frame(width: 400, height: 2)
-                            .background(Color.white)
-
+                
                     }
                     
                     
@@ -412,8 +410,115 @@ struct DayView0: View {
         
         ZStack {
             
-            Color.gray
-                .ignoresSafeArea()
+            ScrollView {
+                
+                VStack (alignment: .leading, spacing: 20){
+                    
+                    Group {
+                        
+                        Text("Description")
+                            .font(.largeTitle)
+                        .foregroundColor(Color("darkblue"))
+                        
+                            
+                            VStack {
+                                
+                                Text("In the first day, we make a welocming event while normally gathering with our students to explain the program to them, what is expected from them and the applications they will use.")
+                                    .padding()
+                                
+                                Text("في اليوم الأول نقوم ببنامج ترحيبي لطلبتنا لشرح ماهو مهم لهم في البرنامج وما سيتعلمونه والأشياء المتوقعة منهم في خلال هذا الكورس و أيضاً مساعدتهم في تنزيل البرامج التي سوف يستخدمونها")
+                                    .padding()
+                                
+                                Text("What you'll need to bring with you: Your laptop and your personal wifi. BE READY TO START! 🫡🔥")
+                                
+                                Text("ما يجب إحضاره: جهازكم اللي راح تشتغلون عليه والنت. وخلكم مستعدييين🔥")
+                                
+                                
+                            } .foregroundColor(Color("darkblue"))
+                            .frame(width: 350, height: 270)
+                            .background(Color.black.opacity(0.2))
+                            .cornerRadius(30)
+                            
+                        
+
+                    }
+                                    
+                    
+                    Group {
+                            
+                        VStack(alignment: .leading) {
+                            
+                            Text("Attendance")
+                                .font(.largeTitle)
+                            
+                            HStack(spacing: 90) {
+                                
+                                Text("Attended ✅")
+                                
+                                Image(systemName: "camera")
+                            }.font(.system(size: 28))
+                               
+                                    .frame(width: 350, height: 100)
+                                    .background(Color.black.opacity(0.2))
+                                .cornerRadius(30)
+                            
+                        } .foregroundColor(Color("darkblue"))
+                        
+                        
+                    }
+                    
+                    
+                    
+                    Group {
+                        
+                        Text("Slides")
+                            .font(.largeTitle)
+                        .foregroundColor(Color("darkblue"))
+                        
+                        VStack {
+                            
+                            Text("Click to acess the slides on google")
+                                .foregroundColor(.white)
+                            
+                            Image("unicode")
+                                .resizable()
+                                
+                        }.frame(width: 350, height: 130)
+                            .background(Color.black.opacity(0.2)).cornerRadius(30)
+                           
+                        
+                    }
+                    
+                    
+                    Group {
+                        
+                        Text("Recordings")
+                            .font(.largeTitle)
+                        .foregroundColor(Color("darkblue"))
+                        
+                        VStack {
+                            
+                            Text("Click to acess the recordings on zoom")
+                                .foregroundColor(.white)
+                            
+                            Text("Passcode: 000cdgf")
+                                .foregroundColor(.white)
+                            
+                            Image("unicode")
+                                .resizable()
+                                
+                        }.frame(width: 350, height: 130)
+                            .background(Color.black.opacity(0.2)).cornerRadius(30)
+                        
+                        
+                        
+                        
+                    }
+                    
+                }
+            }
+                
+            
         }
     }
 }

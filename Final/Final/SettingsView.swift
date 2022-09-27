@@ -13,6 +13,7 @@ struct SettingsView: View {
         ZStack {
             
             Color("darkblue")
+                .opacity(0.9)
                 .ignoresSafeArea()
             
             VStack(alignment: .leading){
@@ -24,6 +25,7 @@ struct SettingsView: View {
                         .foregroundColor(.white)
                         .bold()
                     .padding(.bottom, 70)
+                    .padding(.top, 20)
                     
                     Text("Scan for attendance ")
                         .font(.system(size: 24))
@@ -68,33 +70,46 @@ struct SettingsView: View {
                 Group {
                     
                     
-                    HStack (spacing: 140) {
+                    Link(destination: URL(string: "https://www.joincoded.com")!) {
                         
-                        Text("CODED LAB ")
-                            .font(.system(size: 24))
-                            .foregroundColor(.white)
-                        .padding(.bottom, 20)
-                        
-                        Image(systemName: "arrow.up.forward.app")
-                            .font(.system(size: 27))
-                            .foregroundColor(.white)
-                        
+                        HStack (spacing: 140) {
+                            
+                            Text("CODED LAB ")
+                                .font(.system(size: 24))
+                                .foregroundColor(.white)
+                            .padding(.bottom, 20)
+                            
+                            Image(systemName: "arrow.up.forward.app")
+                                .font(.system(size: 27))
+                                .foregroundColor(.white)
+                            
+                        }
                     }
+                    
+                    
+                   
                     
 //                    Divider()
 //                        .frame(width: 400, height: 2)
 //                        .background(Color.white)
                     
-                    HStack (spacing: 200){
+                    NavigationLink(destination: ContentView()){
                         
-                        Text("Log out")
-                            .font(.system(size: 24))
-                        .foregroundColor(.white)
-                        
-                        
-                        Image(systemName: "arrow.left.square")
-                            .font(.system(size: 27))
+                        HStack (spacing: 200){
+                            
+                            Text("Log out")
+                                .font(.system(size: 24))
                             .foregroundColor(.white)
+                            
+                            
+                            Image(systemName: "arrow.left.square")
+                                .font(.system(size: 27))
+                                .foregroundColor(.white)
+                            
+                        }
+                        
+                        
+                        
                     }
                     
                 }

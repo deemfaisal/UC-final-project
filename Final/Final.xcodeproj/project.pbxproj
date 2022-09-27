@@ -106,9 +106,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18B4828428DF50AC00778661 /* Final */ = {
+		18B4828428DF50AC00778661 /* CODED */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18B4829328DF50AE00778661 /* Build configuration list for PBXNativeTarget "Final" */;
+			buildConfigurationList = 18B4829328DF50AE00778661 /* Build configuration list for PBXNativeTarget "CODED" */;
 			buildPhases = (
 				18B4828128DF50AC00778661 /* Sources */,
 				18B4828228DF50AC00778661 /* Frameworks */,
@@ -118,7 +118,7 @@
 			);
 			dependencies = (
 			);
-			name = Final;
+			name = CODED;
 			productName = Final;
 			productReference = 18B4828528DF50AC00778661 /* Final.app */;
 			productType = "com.apple.product-type.application";
@@ -151,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18B4828428DF50AC00778661 /* Final */,
+				18B4828428DF50AC00778661 /* CODED */,
 			);
 		};
 /* End PBXProject section */
@@ -328,7 +328,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dfo.Final;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Final;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,7 +356,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dfo.Final;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Final;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18B4829328DF50AE00778661 /* Build configuration list for PBXNativeTarget "Final" */ = {
+		18B4829328DF50AE00778661 /* Build configuration list for PBXNativeTarget "CODED" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18B4829428DF50AE00778661 /* Debug */,

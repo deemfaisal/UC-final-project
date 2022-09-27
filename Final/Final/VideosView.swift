@@ -14,7 +14,9 @@ struct VideosView: View {
         ZStack {
             
             Color("darkblue")
+                .opacity(0.9)
                 .ignoresSafeArea()
+            
             
             
             

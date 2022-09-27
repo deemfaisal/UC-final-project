@@ -69,30 +69,36 @@ struct FirstViewContent: View {
                     
                     HStack {
                         
-                        ZStack  {
+                        
+                        Link(destination: URL(string: "https://www.kuwaittimes.com/zain-hosts-student-debate-of-kuwait-codes/")!) {
                             
-                            Image("KwtCodes")
-                                .resizable()
-                                .frame(width: 320, height: 300, alignment: .center)
-                                .opacity(0.7)
-                                .cornerRadius(50)
-                            
-                            VStack(alignment: .leading ){
+                            ZStack  {
                                 
-                                Text("Zain hosts student debate of 'Kuwait Codes' - Kuwait Times")
-                                    .font(.system(size: 26))
-                                    .bold()
-                                    .padding(20)
-                    
-                                HStack {
+                                Image("KwtCodes")
+                                    .resizable()
+                                    .frame(width: 320, height: 300, alignment: .center)
+                                    .opacity(0.7)
+                                    .cornerRadius(50)
+                                
+                                VStack(alignment: .leading ){
                                     
-                                    Text("Tap to acess the article on their website")
-                                    
-                                    Image(systemName: "arrow.up.forward.app")
-                                    
-                                }
-                            } .frame(width: 280, height: 220, alignment: .center)
-                            
+                                    Text("Zain hosts student debate of 'Kuwait Codes' - Kuwait Times")
+                                        .font(.system(size: 26))
+                                        .bold()
+                                        .padding(20)
+                        
+                                    HStack {
+                                        
+                                        Text("Tap to acess the article on their website")
+                                        
+                                        Image(systemName: "arrow.up.forward.app")
+                                        
+                                    }
+                                } .frame(width: 280, height: 220, alignment: .center)
+                                
+                        }
+                        
+                        
                             
                         }
                         
@@ -160,15 +166,9 @@ struct FirstViewContent: View {
                     
                 }
                 
+            
                 
-                
-                
-                
-              
-                
-                
-                
-            }
+            }.foregroundColor(Color("darkblue"))
         }
         
         
