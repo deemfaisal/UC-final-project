@@ -32,7 +32,7 @@ CODED
 
 Idea❔:
 
-CODED is an application that has been built to encounter all the students of the programs of CODED's company. 
+CODED is an application that has been built to have all the students of the programs of CODED's company. 
 
 It is a user-based application, so it displays all the content related to the user from their program track, lectures, tasks, calendar, videos and etc. 
 
