@@ -93,7 +93,7 @@ struct SettingsView: View {
 //                        .frame(width: 400, height: 2)
 //                        .background(Color.white)
                     
-                    NavigationLink(destination: ContentView()){
+                    NavigationLink(destination: ContentView().navigationBarHidden(true)){
                         
                         HStack (spacing: 200){
                             

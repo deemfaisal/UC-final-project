@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1830F9BD28E51EDB0052D21B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830F9BC28E51EDB0052D21B /* ProfileView.swift */; };
 		18B4828928DF50AC00778661 /* FinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4828828DF50AC00778661 /* FinalApp.swift */; };
 		18B4828B28DF50AC00778661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4828A28DF50AC00778661 /* ContentView.swift */; };
 		18B4828D28DF50AE00778661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B4828C28DF50AE00778661 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1830F9BC28E51EDB0052D21B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		18B4828528DF50AC00778661 /* Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B4828828DF50AC00778661 /* FinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalApp.swift; sourceTree = "<group>"; };
 		18B4828A28DF50AC00778661 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				18B482A828DFC17A00778661 /* CalendarView.swift */,
 				18B482AA28DFC1A400778661 /* VideosView.swift */,
 				18B482AC28DFC1DD00778661 /* RoomsView.swift */,
+				1830F9BC28E51EDB0052D21B /* ProfileView.swift */,
 			);
 			path = Final;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				18B4829D28DF576500778661 /* OptionView.swift in Sources */,
 				18B482A728DFA3A300778661 /* TasksView.swift in Sources */,
 				18B4829728DF549700778661 /* FirstView.swift in Sources */,
+				1830F9BD28E51EDB0052D21B /* ProfileView.swift in Sources */,
 				18B4829F28DF579800778661 /* SideMenuViewModel.swift in Sources */,
 				18B482A528DF83DE00778661 /* SettingsView.swift in Sources */,
 				18B4829928DF572300778661 /* SideMenuView.swift in Sources */,

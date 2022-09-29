@@ -57,19 +57,40 @@ struct ContentView: View {
                     }  .frame(width: 210, height: 60, alignment: .center)
                         .padding(8)
                     .border(.white, width: 4)
+                    .padding(.bottom, 20)
 
                     
                     TextField("username", text: $uname)
-                        .frame(width: 200, height: 50, alignment: .center)
-                        .textFieldStyle(.roundedBorder)
+                        .foregroundColor(.white)
+                        .textFieldStyle(.plain)
                         .multilineTextAlignment(.center)
-                        .padding(.top, 20.0)
+                        .placeholder(when: uname.isEmpty) {
+                            
+                            Text("username")
+                                .foregroundColor(.white)
+                               
+                            
+                        }
+                    
+                    Rectangle()
+                        .frame(width: 200, height: 1)
+                        .foregroundColor(.white)
                     
                     SecureField("password", text: $word)
-                        .frame(width: 200, height: 50, alignment: .center)
-                        .textFieldStyle(.roundedBorder)
+                        .foregroundColor(.white)
+                        .textFieldStyle(.plain)
                         .multilineTextAlignment(.center)
-                        
+                        .placeholder(when: uname.isEmpty) {
+                            
+                            Text("password")
+                                .foregroundColor(.white)
+                               
+                            
+                        }
+                    
+                    Rectangle()
+                        .frame(width: 200, height: 1)
+                        .foregroundColor(.white)
                     
                     Text("Forgot password?")
                         .foregroundColor(.white)
@@ -87,6 +108,7 @@ struct ContentView: View {
                             .font(.system(size: 25))
                         
                         NavigationLink( destination: FirstView()) {
+                            
                             
                         Text("LOG IN")
                             .foregroundColor(.white)
@@ -113,5 +135,19 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+extension View {
+    func placeholder<Content: View> (
+        when shouldShow:Bool, alignment: Alignment = .center,
+        @ViewBuilder placeholder: () -> Content)-> some View
+    {
+        ZStack(alignment: alignment ){
+            
+            placeholder().opacity(shouldShow ? 1:0)
+            self
+            
+        }
     }
 }

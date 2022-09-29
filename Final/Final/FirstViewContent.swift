@@ -15,74 +15,108 @@ struct FirstViewContent: View {
         
         ScrollView {
             
-            VStack (alignment: .leading, spacing: 25.0) {
+            ZStack {
+                
+                
+                VStack (alignment: .leading, spacing: 25.0) {
 
-                
-                Text("Welcome,  \(username) ")
-                    .font(.largeTitle)
-//                    .foregroundColor(.blue)
-                    .bold()
-                    .padding(.top, 25.5)
-                    .padding(.leading)
+                    
+                    Text("Welcome,  \(username) ")
+                        .font(.largeTitle)
+    //                    .foregroundColor(.blue)
+                        .bold()
+                        .padding(.top, 25.5)
+                        .padding(.leading)
 
-                HStack {
-                    
-                    Text("Your")
-                        .font(.system(size: 24))
-//                        .foregroundColor(.blue)
-                       
-                    
-                    Text("Activity")
-                        .font(.system(size: 25, weight: .semibold))
-                   }.padding(.leading)
-                
-                
-                Activity()
-                
-                Text("Dashboard")
-                    .font(.largeTitle)
-                    .bold()
-                    .padding(.leading)
-                
-                Text("CODED Community's Shares & Updates")
-                    .font(.subheadline)
-                    .padding(.leading)
-//                    .foregroundColor(.blue)
-                
-                Dashes()
-                
-                ProgramView()
-                
-                
-                
-                Text("News")
-                    .font(.largeTitle)
-                    .bold()
-                    .padding(.leading)
-                
-                Text("Latest News in The World of Technology")
-                    .font(.subheadline)
-                    .padding(.leading)
-                
-                
-                ScrollView(.horizontal) {
-                    
                     HStack {
                         
+                        Text("Your")
+                            .font(.system(size: 24))
+    //                        .foregroundColor(.blue)
+                           
                         
-                        Link(destination: URL(string: "https://www.kuwaittimes.com/zain-hosts-student-debate-of-kuwait-codes/")!) {
+                        Text("Activity")
+                            .font(.system(size: 25, weight: .semibold))
+                       }.padding(.leading)
+                    
+                    
+                    Activity()
+                        .foregroundColor(.white)
+                    
+                    Text("Dashboard")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.leading)
+                    
+                    Text("CODED Community's Shares & Updates")
+                        .font(.subheadline)
+                        .padding(.leading)
+    //                    .foregroundColor(.blue)
+                    
+                    Dashes()
+                    
+                    ProgramView()
+                    
+                    
+                    
+                    Text("News")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.leading)
+                    
+                    Text("Latest News in The World of Technology")
+                        .font(.subheadline)
+                        .padding(.leading)
+                    
+                    
+                    ScrollView(.horizontal) {
+                        
+                        HStack {
+                            
+                            
+                            Link(destination: URL(string: "https://www.kuwaittimes.com/zain-hosts-student-debate-of-kuwait-codes/")!) {
+                                
+                                ZStack  {
+                                    
+                                    Image("KwtCodes")
+                                        .resizable()
+                                        .frame(width: 320, height: 300, alignment: .center)
+                                        .opacity(0.7)
+                                        .cornerRadius(50)
+                                    
+                                    VStack(alignment: .leading ){
+                                        
+                                        Text("Zain hosts student debate of 'Kuwait Codes' - Kuwait Times")
+                                            .font(.system(size: 26))
+                                            .bold()
+                                            .padding(20)
+                            
+                                        HStack {
+                                            
+                                            Text("Tap to acess the article on their website")
+                                            
+                                            Image(systemName: "arrow.up.forward.app")
+                                            
+                                        }
+                                    } .frame(width: 280, height: 220, alignment: .center)
+                                    
+                            }
+                            
+                            
+                                
+                            }
                             
                             ZStack  {
                                 
-                                Image("KwtCodes")
+                                Image("LanP")
                                     .resizable()
                                     .frame(width: 320, height: 300, alignment: .center)
-                                    .opacity(0.7)
+                                    .opacity(0.4)
                                     .cornerRadius(50)
                                 
                                 VStack(alignment: .leading ){
                                     
-                                    Text("Zain hosts student debate of 'Kuwait Codes' - Kuwait Times")
+                                    Text("Top Programming languages that will rule in 2022")
                                         .font(.system(size: 26))
                                         .bold()
                                         .padding(20)
@@ -96,79 +130,50 @@ struct FirstViewContent: View {
                                     }
                                 } .frame(width: 280, height: 220, alignment: .center)
                                 
-                        }
-                        
-                        
-                            
-                        }
-                        
-                        ZStack  {
-                            
-                            Image("LanP")
-                                .resizable()
-                                .frame(width: 320, height: 300, alignment: .center)
-                                .opacity(0.4)
-                                .cornerRadius(50)
-                            
-                            VStack(alignment: .leading ){
                                 
-                                Text("Top Programming languages that will rule in 2022")
-                                    .font(.system(size: 26))
-                                    .bold()
-                                    .padding(20)
-                    
-                                HStack {
-                                    
-                                    Text("Tap to acess the article on their website")
-                                    
-                                    Image(systemName: "arrow.up.forward.app")
-                                    
-                                }
-                            } .frame(width: 280, height: 220, alignment: .center)
+                            }
                             
                             
-                        }
-                        
-                        
-                        ZStack  {
-                            
-                            Image("new")
-                                .resizable()
-                                .frame(width: 320, height: 300, alignment: .center)
-                                .opacity(0.4)
-                                .cornerRadius(50)
-                            
-                            VStack(alignment: .leading ){
+                            ZStack  {
                                 
-                                Text("Future Technology: 22 ideas about to change our world")
-                                    .font(.system(size: 26))
-                                    .bold()
-                                    .padding(20)
-                    
-                                HStack {
+                                Image("new")
+                                    .resizable()
+                                    .frame(width: 320, height: 300, alignment: .center)
+                                    .opacity(0.4)
+                                    .cornerRadius(50)
+                                
+                                VStack(alignment: .leading ){
                                     
-                                    Text("Tap to acess the article on their website")
-                                    
-                                    Image(systemName: "arrow.up.forward.app")
-                                    
-                                }
-                            } .frame(width: 280, height: 220, alignment: .center)
+                                    Text("Future Technology: 22 ideas about to change our world")
+                                        .font(.system(size: 26))
+                                        .bold()
+                                        .padding(20)
+                        
+                                    HStack {
+                                        
+                                        Text("Tap to acess the article on their website")
+                                        
+                                        Image(systemName: "arrow.up.forward.app")
+                                        
+                                    }
+                                } .frame(width: 280, height: 220, alignment: .center)
+                                
+                                
+                            }
                             
                             
-                        }
+                        }.padding(.leading)
+                        
+                       
                         
                         
-                    }.padding(.leading)
+                        
+                    }
                     
-                   
-                    
-                    
-                    
-                }
                 
-            
-                
-            }.foregroundColor(Color("darkblue"))
+                    
+                }.foregroundColor(Color("darkblue"))
+            }
         }
         
         
@@ -205,6 +210,7 @@ struct Dashes: View {
     ]
     
     var body: some View {
+        
         ScrollView (.horizontal) {
             
             HStack {
@@ -334,7 +340,7 @@ struct Activity: View {
                     }.frame(width: 150, height: 100, alignment: .center)
                     //                    .layoutPriority(1)
                     //                    .lineLimit(2)
-                        .background(Color.black.opacity(0.3))
+                        .background(Color.black.opacity(0.8))
                         .clipShape(Rectangle())
                         .cornerRadius(20)
                         .padding(.leading)
@@ -350,7 +356,7 @@ struct Activity: View {
                     }.frame(width: 200, height: 100, alignment: .center)
                     //                    .layoutPriority(1)
                     //                    .lineLimit(2)
-                        .background(Color.black.opacity(0.3))
+                        .background(Color.black.opacity(0.8))
                         .clipShape(Rectangle())
                         .cornerRadius(20)
                         .padding(.leading)

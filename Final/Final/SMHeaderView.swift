@@ -34,13 +34,18 @@ struct SMHeaderView: View {
             
             VStack(alignment: .leading) {
                 
-                Image("what")
-                    .resizable()
-                    .scaledToFill()
-                    .clipped()
-                    .frame(width: 64, height: 64)
-                    .clipShape(Circle())
-                    .padding(.bottom, 16)
+                
+                
+                NavigationLink(destination: ProfileView()) {
+                    Image("what")
+                        .resizable()
+                        .scaledToFill()
+                        .clipped()
+                        .frame(width: 64, height: 64)
+                        .clipShape(Circle())
+                        .padding(.bottom, 16)
+                }
+                
                 
                 
                 Text("Deem Alotaibi")

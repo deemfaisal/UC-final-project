@@ -59,7 +59,7 @@ struct LecturesView: View {
                                  
                                 
                          }.padding(.leading)
-                            .navigationBarTitle("Lectures")
+                           
                         
                         
                         
@@ -221,6 +221,7 @@ struct LecturesView: View {
                             
                             
                         }.padding()
+                        
                         Divider()
                             .frame(width: 400, height: 2)
                             .background(Color.gray)
@@ -424,18 +425,20 @@ struct DayView0: View {
                             VStack {
                                 
                                 Text("In the first day, we make a welocming event while normally gathering with our students to explain the program to them, what is expected from them and the applications they will use.")
-                                    .padding()
+                                    .frame(width: 300, height: 120)
                                 
+                                                                    
                                 Text("في اليوم الأول نقوم ببنامج ترحيبي لطلبتنا لشرح ماهو مهم لهم في البرنامج وما سيتعلمونه والأشياء المتوقعة منهم في خلال هذا الكورس و أيضاً مساعدتهم في تنزيل البرامج التي سوف يستخدمونها")
+                                    .frame(width: 300, height: 120)
                                     .padding()
                                 
                                 Text("What you'll need to bring with you: Your laptop and your personal wifi. BE READY TO START! 🫡🔥")
-                                
+                                    .frame(width: 300, height: 80)
                                 Text("ما يجب إحضاره: جهازكم اللي راح تشتغلون عليه والنت. وخلكم مستعدييين🔥")
-                                
+                                    .frame(width: 300, height: 80)
                                 
                             } .foregroundColor(Color("darkblue"))
-                            .frame(width: 350, height: 270)
+                            .frame(width: 350, height: 460)
                             .background(Color.black.opacity(0.2))
                             .cornerRadius(30)
                             

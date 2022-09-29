@@ -230,7 +230,7 @@ struct ClassView1: View {
                                 .padding()
                         
                         
-                    }.frame(width: 350, height: 390)
+                    }.frame(width: 350, height: 570)
                         .background(Color.black.opacity(0.2))
                         .cornerRadius(30)
                     
