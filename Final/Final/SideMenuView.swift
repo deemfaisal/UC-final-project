@@ -40,7 +40,8 @@ struct SideMenuView: View {
                     }, label: {
                         
                         OptionView(option: .Lectures)
-                    }).navigationTitle("Home").foregroundColor(Color("darkblue"))
+                    })
+//                    .navigationTitle("Home").foregroundColor(Color("darkblue"))
                          
                 NavigationLink(destination: {
                     
@@ -50,7 +51,8 @@ struct SideMenuView: View {
                 }, label: {
                     
                     OptionView(option: .Tasks)
-                }).navigationTitle("Home").foregroundColor(Color("darkblue"))
+                })
+//                .navigationTitle("Home").foregroundColor(Color("darkblue"))
                 
                 
                 NavigationLink(destination: {
@@ -61,7 +63,8 @@ struct SideMenuView: View {
                 }, label: {
                     
                     OptionView(option: .Calendar)
-                }).navigationTitle("Home").foregroundColor(Color("darkblue"))
+                })
+//                .navigationTitle("Home").foregroundColor(Color("darkblue"))
                 
                 NavigationLink(destination: {
                     
@@ -71,7 +74,8 @@ struct SideMenuView: View {
                 }, label: {
                     
                     OptionView(option: .Videos)
-                }).navigationTitle("Home").foregroundColor(Color("darkblue"))
+                })
+//                .navigationTitle("Home").foregroundColor(Color("darkblue"))
                 
                 NavigationLink(destination: {
                     
@@ -81,7 +85,8 @@ struct SideMenuView: View {
                 }, label: {
                     
                     OptionView(option: .Rooms)
-                }).navigationTitle("Home").foregroundColor(Color("darkblue"))
+                })
+//                .navigationTitle("Home").foregroundColor(Color("darkblue"))
                 
                 
                 NavigationLink(destination: {
@@ -93,7 +98,8 @@ struct SideMenuView: View {
                     
                     OptionView(option: .Settings)
                     
-                }).navigationTitle("Home").foregroundColor(Color("darkblue"))
+                })
+//                .navigationTitle("Home").foregroundColor(Color("darkblue"))
                    
                     
                     

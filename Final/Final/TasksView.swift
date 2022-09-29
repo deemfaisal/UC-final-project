@@ -144,7 +144,7 @@ struct TasksView: View {
                     
                     Group {
                         
-                        HStack(spacing: 240) {
+                        HStack(spacing: 243) {
                             
                             Text("CW 7 ")
                               

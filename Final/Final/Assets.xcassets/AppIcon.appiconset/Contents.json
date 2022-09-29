@@ -6,6 +6,7 @@
       "size" : "20x20"
     },
     {
+      "filename" : "design.jpeg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
@@ -36,6 +37,7 @@
       "size" : "60x60"
     },
     {
+      "filename" : "CODEDdd.jpeg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -71,6 +73,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "design2.jpeg",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
@@ -81,11 +84,13 @@
       "size" : "76x76"
     },
     {
+      "filename" : "design3new.jpeg",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "design4.jpeg",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

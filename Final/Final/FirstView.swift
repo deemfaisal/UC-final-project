@@ -51,8 +51,7 @@ struct FirstView: View {
                             
                         }))
                     
-            
-                        .navigationTitle("Home")
+          
                     .navigationBarTitleDisplayMode(.inline)
 //                    
                     FirstViewContent()

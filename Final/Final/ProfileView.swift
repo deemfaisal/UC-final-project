@@ -152,9 +152,23 @@ struct ProfileView: View {
                         Rectangle()
                             .frame(width: 300, height: 2)
                             .foregroundColor(.white)
+                        
+                        Text("Save changes")
+                            .bold()
+                            .frame(width: 200, height: 50, alignment: .center)
+                            .background(.gray)
+                            .cornerRadius(30)
+                            .shadow(radius: 30)
+                            .padding(.top, 40)
+                        
+                        
                     }
                     
                     
+                    
+                    
+                    
+                   
                     
                     
                     

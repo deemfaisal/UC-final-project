@@ -106,61 +106,89 @@ struct FirstViewContent: View {
                                 
                             }
                             
-                            ZStack  {
+                            Link(destination: URL(string:"https://fireart.studio/blog/top-programming-languages-that-will-rule-in-2021/" )!) {
                                 
-                                Image("LanP")
-                                    .resizable()
-                                    .frame(width: 320, height: 300, alignment: .center)
-                                    .opacity(0.4)
-                                    .cornerRadius(50)
                                 
-                                VStack(alignment: .leading ){
+                                ZStack  {
                                     
-                                    Text("Top Programming languages that will rule in 2022")
-                                        .font(.system(size: 26))
-                                        .bold()
-                                        .padding(20)
+                                    Image("LanP")
+                                        .resizable()
+                                        .frame(width: 320, height: 300, alignment: .center)
+                                        .opacity(0.4)
+                                        .cornerRadius(50)
+                                    
+                                    VStack(alignment: .leading ){
+                                        
+                                        Text("Top Programming languages that will rule in 2022")
+                                            .font(.system(size: 26))
+                                            .bold()
+                                            .padding(20)
+                            
+                                        HStack {
+                                            
+                                            Text("Tap to acess the article on their website")
+                                            
+                                            Image(systemName: "arrow.up.forward.app")
+                                            
+                                        }
+                                    } .frame(width: 280, height: 220, alignment: .center)
+                                    
+                                    
+                                }
+                                
+                            }
+                            
                         
-                                    HStack {
+                            Link(destination: URL(string: "https://www.sciencefocus.com/future-technology/future-technology-22-ideas-about-to-change-our-world/amp/")!) {
+                                
+                                ZStack  {
+                                    
+                                    Image("new")
+                                        .resizable()
+                                        .frame(width: 320, height: 300, alignment: .center)
+                                        .opacity(0.4)
+                                        .cornerRadius(50)
+                                    
+                                    VStack(alignment: .leading ){
                                         
-                                        Text("Tap to acess the article on their website")
-                                        
-                                        Image(systemName: "arrow.up.forward.app")
-                                        
-                                    }
-                                } .frame(width: 280, height: 220, alignment: .center)
+                                        Text("Future Technology: 22 ideas about to change our world")
+                                            .font(.system(size: 26))
+                                            .bold()
+                                            .padding(20)
+                            
+                                        HStack {
+                                            
+                                            Text("Tap to acess the article on their website")
+                                            
+                                            Image(systemName: "arrow.up.forward.app")
+                                            
+                                        }
+                                    } .frame(width: 280, height: 220, alignment: .center)
+                                    
+                                    
+                                }
                                 
                                 
                             }
                             
                             
-                            ZStack  {
+                            ZStack {
                                 
-                                Image("new")
-                                    .resizable()
-                                    .frame(width: 320, height: 300, alignment: .center)
-                                    .opacity(0.4)
-                                    .cornerRadius(50)
                                 
-                                VStack(alignment: .leading ){
+                                VStack {
                                     
-                                    Text("Future Technology: 22 ideas about to change our world")
-                                        .font(.system(size: 26))
+                                    Image(systemName: "plus.app.fill")
+                                    
+                                    
+                                    Text("Add news")
                                         .bold()
-                                        .padding(20)
-                        
-                                    HStack {
-                                        
-                                        Text("Tap to acess the article on their website")
-                                        
-                                        Image(systemName: "arrow.up.forward.app")
-                                        
-                                    }
-                                } .frame(width: 280, height: 220, alignment: .center)
+                                    
+                                }.foregroundColor(.white)
                                 
-                                
+                                    .frame(width: 320, height: 300)
+                                    .background(Color.black.opacity(0.4))
+                                    .cornerRadius(50)
                             }
-                            
                             
                         }.padding(.leading)
                         
@@ -265,6 +293,23 @@ struct Dashes: View {
                 }
                 
                 
+                ZStack {
+                    
+                    
+                    VStack {
+                        
+                        Image(systemName: "plus.app.fill")
+                        
+                        
+                        Text("Add your share")
+                            .bold()
+                        
+                    }.foregroundColor(.white)
+                    
+                        .frame(width: 320, height: 300)
+                        .background(Color.black.opacity(0.4))
+                        .cornerRadius(50)
+                }
                 
             }.padding(.leading)
             

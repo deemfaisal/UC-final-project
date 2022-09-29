@@ -13,7 +13,7 @@ struct RoomsView: View {
     
         person(Image: "user", Name: "Dr. Ahmad", Status: "Mentor - iOS Track"),
         person(Image: "user", Name: "Dana", Status: "Student - iOS Track"),
-        person(Image: "cat", Name: "Abdullah", Status: "Student - iOS Track"),
+        person(Image: "cat", Name: "Hind", Status: "Student - iOS Track"),
         person(Image: "dark2", Name: "May", Status: "Student - iOS Track"),
         person(Image: "unknown", Name: "Al-Anoud", Status: "Student - iOS Track"),
     
